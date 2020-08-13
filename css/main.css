@@ -1,3 +1,12 @@
 #side {
-  width: 10%;
+  width: 15%;
+}
+
+.container {
+  padding-top: 2%;
+  text-align: center;
+}
+
+.results {
+  display: none;
 }

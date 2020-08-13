@@ -3,6 +3,13 @@ $(document).ready(function() {
     event.preventDefault();
 
     const sideA = parseInt($("input#side-a").val());
-    // console.log(sideA);
+    const sideB = parseInt($("input#side-b").val());
+    const sideC = parseInt($("input#side-c").val());
+    // console.log(sideC, sideB, sideA);
+
+    if (sideA === sideB && sideA === sideC) {
+      $(".results#equilateral").show();
+    } else if (sideA === sideB || sideA === sideC || sideB ===sideC) {
+    }
   });
 });
