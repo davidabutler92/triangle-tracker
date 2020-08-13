@@ -9,7 +9,10 @@ $(document).ready(function() {
 
     if (sideA === sideB && sideA === sideC) {
       $(".results#equilateral").show();
-    } else if (sideA === sideB || sideA === sideC || sideB ===sideC) {
+    } else if (sideA === sideB || sideA === sideC || sideB === sideC) {
+      $(".results#isosceles").show();
+    } else if (sideA !== sideB && sideA !==sideC && sideB !== sideC) {
+      $(".results#scalene").show();
     }
   });
 });
